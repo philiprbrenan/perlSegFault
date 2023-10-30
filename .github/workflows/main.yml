@@ -1,0 +1,20 @@
+# Test 2023-10-30 at 05:05:17
+
+name: Test
+
+on:
+  push
+
+jobs:
+
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        ref: 'main'
+
+    - name: Segfault
+      run:
+        perl -w map.pl
