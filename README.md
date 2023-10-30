@@ -1,0 +1,2 @@
+# perlSegFault
+Perl segmentation fault
